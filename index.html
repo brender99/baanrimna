@@ -607,6 +607,37 @@
             color: var(--secondary-color);
         }
 
+        /* Reviews Section Styling */
+        .rating-display {
+            text-align: center;
+        }
+
+        .rating-score {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stars-display {
+            margin-bottom: 10px;
+        }
+
+        .stars-display i {
+            font-size: 1.2rem;
+            margin: 0 2px;
+        }
+
+        .rating-label {
+            margin-bottom: 10px;
+        }
+
+        .rating-label .badge {
+            font-size: 0.9rem;
+            padding: 8px 12px;
+        }
+
         /* Footer */
         footer {
             background: linear-gradient(135deg, var(--dark-color) 0%, #2c2c2c 100%);
@@ -978,107 +1009,107 @@
     <section id="reviews">
         <div class="container">
             <h2>รีวิวและการจองห้องพัก</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    
-                    <!-- Rating Cards Row -->
-                    <div class="row mb-5">
-                        <!-- Google Rating Card -->
-                        <div class="col-md-6 mb-4">
-                            <div class="review-platform-card google-card">
-                                <div class="platform-logo">
-                                    <i class="fab fa-google"></i>
-                                </div>
-                                <h4 class="platform-name">Google Maps</h4>
-                                <div class="rating-score">
-                                    <span class="score">4.9</span>
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="review-count">จาก 18 รีวิว</p>
-                                </div>
-                                <a href="https://www.google.com/travel/hotels/entity/CgoI5d7yuPfr4-UyEAE/reviews" 
-                                   target="_blank" 
-                                   class="platform-btn google-btn">
-                                    <i class="fas fa-external-link-alt"></i> ดูรีวิวใน Google
-                                </a>
-                            </div>
+            
+            <!-- Reviews Cards -->
+            <div class="row mb-5">
+                <!-- Google Reviews Card -->
+                <div class="col-lg-6 mb-4">
+                    <div class="amenity-item h-100">
+                        <div class="amenity-icon" style="color: #4285f4;">
+                            <i class="fab fa-google"></i>
                         </div>
-                        
-                        <!-- Agoda Rating Card -->
-                        <div class="col-md-6 mb-4">
-                            <div class="review-platform-card agoda-card">
-                                <div class="platform-logo agoda-logo">
-                                    <span class="agoda-text">agoda</span>
-                                </div>
-                                <h4 class="platform-name">Agoda</h4>
-                                <div class="rating-score">
-                                    <span class="score agoda-score">9.6</span>
-                                    <div class="agoda-rating-label">
-                                        <span class="excellent">คะแนนเยี่ยม</span>
-                                    </div>
-                                    <p class="review-count">จาก 6 รีวิว</p>
-                                </div>
+                        <h5 class="mb-3">Google Maps</h5>
+                        <div class="rating-display mb-3">
+                            <span class="rating-score">4.9</span>
+                            <div class="stars-display">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="text-muted mb-3">จาก 18 รีวิว</p>
+                        </div>
+                        <a href="https://www.google.com/travel/hotels/entity/CgoI5d7yuPfr4-UyEAE/reviews" 
+                           target="_blank" 
+                           class="btn btn-outline-primary">
+                            <i class="fas fa-external-link-alt"></i> ดูรีวิวใน Google
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Agoda Reviews Card -->
+                <div class="col-lg-6 mb-4">
+                    <div class="amenity-item h-100">
+                        <div class="amenity-icon" style="color: #ff6b35;">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h5 class="mb-3">Agoda</h5>
+                        <div class="rating-display mb-3">
+                            <span class="rating-score">9.6</span>
+                            <div class="rating-label">
+                                <span class="badge bg-success">คะแนนเยี่ยม</span>
+                            </div>
+                            <p class="text-muted mb-3">จาก 6 รีวิว</p>
+                        </div>
+                        <a href="https://www.agoda.com/th-th/h75692084/hotel/saraburi-th.html" 
+                           target="_blank" 
+                           class="btn btn-outline-primary">
+                            <i class="fas fa-external-link-alt"></i> ดูรีวิวใน Agoda
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Booking Options -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center mb-4">
+                        <h3 class="h4 text-primary">จองห้องพักได้ง่ายๆ</h3>
+                        <p class="text-muted">เลือกช่องทางการจองที่สะดวกสำหรับคุณ</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <!-- Online Booking -->
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-laptop contact-icon"></i>
+                            <div>
+                                <h5 class="mb-2">จองออนไลน์</h5>
+                                <p class="mb-2">ผ่าน Agoda</p>
+                                <small class="text-muted">• เช็คราคาและห้องว่างได้ทันที</small>
+                                <br>
                                 <a href="https://www.agoda.com/th-th/h75692084/hotel/saraburi-th.html" 
                                    target="_blank" 
-                                   class="platform-btn agoda-btn">
-                                    <i class="fas fa-external-link-alt"></i> ดูรีวิวใน Agoda
+                                   class="btn btn-primary btn-sm mt-2" style="color: white;">
+                                    <i class="fas fa-external-link-alt"></i> จองเลย
                                 </a>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Booking Section -->
-                    <div class="booking-section">
-                        <div class="booking-header">
-                            <h3>จองห้องพักได้ง่ายๆ</h3>
-                            <p>เลือกช่องทางการจองที่สะดวกสำหรับคุณ</p>
-                        </div>
-                        
-                        <div class="booking-options">
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 mb-3">
-                                    <a href="https://www.agoda.com/th-th/h75692084/hotel/saraburi-th.html" 
-                                       target="_blank" 
-                                       class="booking-option online-booking">
-                                        <div class="booking-icon">
-                                            <i class="fas fa-laptop"></i>
-                                        </div>
-                                        <div class="booking-content">
-                                            <h5>จองออนไลน์</h5>
-                                            <p>ผ่าน Agoda</p>
-                                            <span class="booking-benefit">• เช็คราคาและห้องว่างได้ทันที</span>
-                                        </div>
-                                        <div class="booking-arrow">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                
-                                <div class="col-md-6 mb-3">
-                                    <a href="tel:+66843495810" 
-                                       class="booking-option phone-booking">
-                                        <div class="booking-icon">
-                                            <i class="fas fa-phone"></i>
-                                        </div>
-                                        <div class="booking-content">
-                                            <h5>โทรจองตรง</h5>
-                                            <p>084-349-5810</p>
-                                            <span class="booking-benefit">• สอบถามและจองได้ทันที</span>
-                                        </div>
-                                        <div class="booking-arrow">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </div>
-                                    </a>
-                                </div>
+                </div>
+                
+                <!-- Phone Booking -->
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <div>
+                                <h5 class="mb-2">โทรจองตรง</h5>
+                                <p class="mb-2">
+                                    <a href="tel:+66843495810" class="phone-link">084-349-5810</a>
+                                </p>
+                                <small class="text-muted">• สอบถามและจองได้ทันที</small>
+                                <br>
+                                <a href="tel:+66843495810" class="btn btn-success btn-sm mt-2" style="color: white;">
+                                    <i class="fas fa-phone"></i> โทรเลย
+                                </a>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
