@@ -104,9 +104,14 @@
             "latitude": 14.4747573,
             "longitude": 100.8691309
         },
-        "openingHours": "Mo-Su 00:00-23:59",
-        "checkinTime": "14:00",
-        "checkoutTime": "11:00",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+            ],
+            "opens": "07:00",
+            "closes": "22:00"
+        },
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
@@ -188,8 +193,8 @@
             "dayOfWeek": [
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
             ],
-            "opens": "00:00",
-            "closes": "23:59"
+            "opens": "07:00",
+            "closes": "22:00"
         }
     }
     </script>
@@ -1082,6 +1087,8 @@
                                 <p class="mb-2">ผ่าน Agoda</p>
                                 <small class="text-muted">• เช็คราคาและห้องว่างได้ทันที</small>
                                 <br>
+                                <small class="text-muted">• ทำการจองออนไลน์</small>
+                                <br>
                                 <a href="https://www.agoda.com/th-th/h75692084/hotel/saraburi-th.html" 
                                    target="_blank" 
                                    class="btn btn-primary btn-sm mt-2" style="color: white;">
@@ -1104,6 +1111,8 @@
                                 </p>
                                 <small class="text-muted">• สอบถามและจองได้ทันที</small>
                                 <br>
+                                <small class="text-muted">• เวลาให้บริการ: 07:00-22:00 น.</small>
+                                <br>
                                 <a href="tel:+66843495810" class="btn btn-success btn-sm mt-2" style="color: white;">
                                     <i class="fas fa-phone"></i> โทรเลย
                                 </a>
@@ -1122,6 +1131,18 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <p class="lead text-center mb-5">สอบถามเพิ่มเติม สำรองห้องพัก</p>
+                    
+                    <!-- Business Hours -->
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <div class="text-center">
+                                <h5 class="mb-2">เวลาให้บริการ</h5>
+                                <p class="h5 text-primary mb-2">07:00 - 22:00 น.</p>
+                                <small class="text-muted">สอบถามและจองได้ในเวลาดังกล่าว</small>
+                            </div>
+                        </div>
+                    </div>
                     
                     <!-- Phone Contact -->
                     <div class="contact-info">
